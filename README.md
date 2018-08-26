@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-Predicao em Python Cliente Angular# predicao
-=======
+[![Build Status](https://github.com/DevJoseWeb/predicao/blob/master/x.png)](https://www.youtube.com/watch?v=EBKLgGdJ-LA)
 #Predição(Python + TypeScript + Angular + PrimeNG + Neo4J + SpringBoot + Kafka)
 
 import pandas as pd
