@@ -1,27 +1,40 @@
 <form>
   <div class="ui-g">
+   
+    <p-tabView>
+      
+        <p-tabPanel header="Importar Arquivo CSV">
+            <div class="ui-g-12 ui-fluid">
+                <h2>Predição de Clientes</h2>
+              </div>
+          
+              <div class="ui-g-12 ui-md-4 ui-lg-2 ui-fluid">
+                <label>Arquivo CSV</label>
+                <input pInputText/>
+              </div>
+          
+              <p-fileUpload name="myfile[]" url="./upload.php" multiple="multiple"
+                  accept="image/*" maxFileSize="1000000">
 
-    <div class="ui-g-12 ui-fluid">
-      <h2>Predição de Clientes</h2>
-    </div>
+                  <ng-template pTemplate="toolbar">
+                      <div>Upload 3 Arquivos</div>
+                  </ng-template>
+                  <ng-template let-file pTemplate="file">
+                      <div>Upload Arquivo</div>
+                  </ng-template>
+                  <ng-template pTemplate="content">
+                      <div>Upload Arquivo</div>
+                  </ng-template>
 
-    <div class="ui-g-12 ui-md-4 ui-lg-2 ui-fluid">
-      <label>Importar Arquivo CSV</label>
-      <input pInputText/>
-    </div>
+              </p-fileUpload>
 
-    <p-fileUpload name="myfile[]" url="./upload.php" multiple="multiple"
-        accept="image/*" maxFileSize="1000000">
-        <ng-template pTemplate="toolbar">
-            <div>Upload 3 Arquivos</div>
-        </ng-template>
-        <ng-template let-file pTemplate="file">
-            <div>Uploaded Arquivo</div>
-        </ng-template>
-        <ng-template pTemplate="content">
-            <div>Uploaded Arquivo</div>
-        </ng-template>
-    </p-fileUpload>
+        </p-tabPanel>
+        <p-tabPanel header="Gráfico">            
+        </p-tabPanel>
+        <p-tabPanel header="Dados">            
+        </p-tabPanel>
 
+    </p-tabView>
+  
   </div>
 </form>

@@ -29,7 +29,6 @@ teste_marcacoes = Y[tamanho_de_treino:fim_de_treino]
 validacao_dados = X[fim_de_treino:]
 validacao_marcacoes = Y[fim_de_treino:]
 
-
 def fit_and_predict(nome, modelo, treino_dados, treino_marcacoes, teste_dados, teste_marcacoes):
 	modelo.fit(treino_dados, treino_marcacoes)
 
